@@ -23,5 +23,6 @@ To get Visual Studio Premium 2012
 8. Go to https://docs.google.com/file/d/0BzWIsCZgQb_LRVlMcF9DbVdzNHM/edit?usp=sharing and download* and run that.
 9. Follow the installation instructions and enter the key from earlier
 
+___
 
 \* this download is only an installer, which will download the actual program (~8GB)
