@@ -9,7 +9,7 @@ Pillow-Engine
 
 ##Dev Environment
 
-To get Visual Studio Premium 2012
+####To get Visual Studio Premium 2012
 
 1. Go to https://secure.scs.carleton.ca:4430/scs_authentication/dreamspark-form.php?department=scs
 2. Sign in with carleton.ca username and password
@@ -20,6 +20,18 @@ To get Visual Studio Premium 2012
 7. Save your key somewhere where you will not lose it
 8. Go to https://docs.google.com/file/d/0BzWIsCZgQb_LRVlMcF9DbVdzNHM/edit?usp=sharing and download* and run that.
 9. Follow the installation instructions and enter the key from earlier
+
+####Download the OpenGL dev library
+
+1. Go to: http://glew.sourceforge.net/
+2. Download the Windows 32 bit binary file
+3. Extract the zip to a folder of your choosing
+4. Copy the "bin/glew32.dll" to "C:/Windows/system32"
+5. Copy the "lib/glew32.lib to "{VC Root}/Lib"
+6. Copy the "include/GL/glew.h" to "{VC Root}/Include/GL"
+7. Copy the "include/GL/wglew.h" to "{VC Root}/Include/GL"
+
+{VC Root} is the install directory for Visual Studio
 
 
 ##Examples
