@@ -31,7 +31,7 @@ Pillow-Engine
 6. Copy the "include/GL/glew.h" to "{VC Root}/Include/GL"
 7. Copy the "include/GL/wglew.h" to "{VC Root}/Include/GL"
 
-{VC Root} is the install directory for Visual Studio
+{VC Root} is the install directory for Visual Studio C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC for me
 
 
 ##Examples
