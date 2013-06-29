@@ -3,7 +3,7 @@ Pillow-Engine
 ##Is there any reason to read this?
 
 1. Yes there is
-2. We need to choose a language
+2. Language is C++, as this is the most common for game dev
 3. This will be for 3D games
 4. Define more things
 
@@ -23,9 +23,14 @@ To get Visual Studio Premium 2012
 
 
 ##Examples
+
 1. window test
+
     a. draws a basic window and prints a string out to it
+    
     b. link to tutorial it came from: http://www.cprogramming.com/tutorial/opengl_first_windows_app.html
+    
+    
 ___
 
 \* this download is only an installer, which will download the actual program (~8GB)
