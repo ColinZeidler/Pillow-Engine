@@ -2,7 +2,7 @@
 #define WIN32_LEAN_AND_MEAN	
 #pragma comment(linker, "/subsystem:windows")
 /*	Pre-processor directives*/
-//#include "stdafx.h"
+//#include "stdafx.h" //not needed
 #include <windows.h>
 /*	Windows Procedure Event Handler*/
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -31,7 +31,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			SetTextColor(hDC, COLORREF(0x00FF0000));
 			/*	Display text in middle of window*/
 			TextOut(hDC,150,150,string,sizeof(string)-1);
-			Rectangle(hDC, 200, 200, 500, 500);
+			Rectangle(hDC, 200, 200, 500, 500);	//draws the outline of a rectangle
 			EndPaint(hwnd, &paintStruct);
 			return 0;
 			break;
