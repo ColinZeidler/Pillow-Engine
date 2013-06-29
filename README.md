@@ -1,15 +1,13 @@
 Pillow-Engine
 =============
-Is there any reason to read this?
-
+##Is there any reason to read this?
 
 1. Yes there is
 2. We need to choose a language
 3. This will be for 3D games
 4. Define more things
 
-Dev Environment
-===============
+##Dev Environment
 
 To get Visual Studio Premium 2012
 
@@ -23,6 +21,11 @@ To get Visual Studio Premium 2012
 8. Go to https://docs.google.com/file/d/0BzWIsCZgQb_LRVlMcF9DbVdzNHM/edit?usp=sharing and download* and run that.
 9. Follow the installation instructions and enter the key from earlier
 
+
+##Examples
+1. window test
+    a. draws a basic window and prints a string out to it
+    b. link to tutorial it came from: http://www.cprogramming.com/tutorial/opengl_first_windows_app.html
 ___
 
 \* this download is only an installer, which will download the actual program (~8GB)
