@@ -26,12 +26,8 @@ Pillow-Engine
 1. Go to: http://glew.sourceforge.net/
 2. Download the Windows 32 bit binary file
 3. Extract the zip to a folder of your choosing
-4. Copy the "bin/glew32.dll" to "C:/Windows/system32"
-5. Copy the "lib/glew32.lib to "{VC Root}/Lib"
-6. Copy the "include/GL/glew.h" to "{VC Root}/Include/GL"
-7. Copy the "include/GL/wglew.h" to "{VC Root}/Include/GL"
+4. COLIN ADD FINAL STEPS HERE
 
-{VC Root} is the install directory for Visual Studio C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC for me
 
 
 ##Examples
