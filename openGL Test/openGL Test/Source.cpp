@@ -8,7 +8,14 @@
 
 void renderScene(void);
 void changeSize(int, int);
+void normalKeys(unsigned char, int, int);
+void specialKeys(int, int, int);
+
 float angle = 0.0f;
+
+float red = 1.0f;
+float green = 1.0f;
+float blue = 1.0f;
 
 int main(int argc, char **argv) {
 
@@ -24,7 +31,10 @@ int main(int argc, char **argv) {
 
 	glutReshapeFunc(changeSize);
 
-	glutIdleFunc(renderScene);
+	glutIdleFunc(renderScene);	//cpu use is astronomical, should figure out how to reduce the number of renders performed...
+
+	glutKeyboardFunc(normalKeys);
+	glutSpecialFunc(specialKeys);
 
 	//begin event processing cycle
 	glutMainLoop();
@@ -44,6 +54,8 @@ void renderScene(void) {
 
 	glRotatef(angle, 0.0f, 1.0f, 0.0f);
 
+	//set the color of the triangle
+	glColor3f(red,green,blue);
 	glBegin(GL_TRIANGLES);
 		glVertex3f(-2.0f,-2.0f, 0.0f);
 		glVertex3f( 2.0f, 0.0f, 0.0);
@@ -77,4 +89,31 @@ void changeSize(int width, int height) {
 
 	// Get Back to the Modelview
 	glMatrixMode(GL_MODELVIEW);
+}
+
+void normalKeys(unsigned char key, int x, int y) {
+	if (key == 27)	//excape is pressed
+		exit(0);
+}
+
+void specialKeys(int key, int x, int y) {
+
+	//change the colour of the triangle when a key is pressed
+	switch(key) {
+		case GLUT_KEY_F1:
+			red = 1.0f;
+			green = 0.0f;
+			blue = 0.0f;
+			break;
+		case GLUT_KEY_F2:
+			red = 0.0f;
+			green =1.0f;
+			blue = 0.0f;
+			break;
+		case GLUT_KEY_F3:
+			red = 0.0f;
+			green = 0.0f;
+			blue = 1.0f;
+			break;
+	}
 }
