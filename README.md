@@ -32,6 +32,10 @@ Pillow-Engine
 7. In that folder create two folders "include" and "lib"
 8. From where you extracted glew copy the contents of "include" and "lib" into the repective folders in "C:\C Libs"
 9. Repeat the above for the download of freeGlut
+10. once this is done open the project that you wish to work on.
+11. once it is open press F5 to build and run it, it should fail to run
+12. We now need to copy the "freeglut.dll" file from the freeglut/bin folder into the projects Debug folder
+13. Do the same as above for the glew32.dll file in the Glew folder
 
 
 
