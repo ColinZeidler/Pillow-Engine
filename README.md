@@ -21,12 +21,17 @@ Pillow-Engine
 8. Go to https://docs.google.com/file/d/0BzWIsCZgQb_LRVlMcF9DbVdzNHM/edit?usp=sharing and download* and run that.
 9. Follow the installation instructions and enter the key from earlier
 
-####Download the OpenGL dev library
+####Download the OpenGL dev library (GLEW and freeGLUT)
 
 1. Go to: http://glew.sourceforge.net/
 2. Download the Windows 32 bit binary file
 3. Extract the zip to a folder of your choosing
-4. COLIN ADD FINAL STEPS HERE
+4. [Go here to download freeGlut] (http://sourceforge.net/projects/freeglut/files/freeglut/2.8.1/freeglut-2.8.1.tar.gz/download?use_mirror=superb-dca2&download=)
+5. Extract the zip to a location of your choosing
+6. Create a folder called C Libs on your C:\ drive
+7. In that folder create two folders "include" and "lib"
+8. From where you extracted glew copy the contents of "include" and "lib" into the repective folders in "C:\C Libs"
+9. Repeat the above for the download of freeGlut
 
 
 
