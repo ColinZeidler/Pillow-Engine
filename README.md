@@ -40,12 +40,9 @@ Pillow-Engine
 
 
 ##Examples
+####openGL Test
+Draws a triangle that spins (and is awesome), this one updates as Colin is progressing through an associated tutorial...
 
-1. window test
-
-    a. draws a basic window and prints a string out to it
-    
-    b. link to tutorial it came from: http://www.cprogramming.com/tutorial/opengl_first_windows_app.html
     
 ##Tutorials:
 1. [Basic Glut/openGL tutorial] (http://www.lighthouse3d.com/tutorials/glut-tutorial/setup-basics/)
