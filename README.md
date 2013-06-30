@@ -42,6 +42,9 @@ Pillow-Engine
 ##Examples
 ####openGL Test
 Draws a triangle that spins (and is awesome), this one updates as Colin is progressing through an associated tutorial...
+####Delta Test
+opens a console that prints out a bunch of numbers, Colin's proof of concept for consistent calculations 
+regardless of framerate. It is bassically useless and was added mainly to just get code in here :D
 
     
 ##Tutorials:
