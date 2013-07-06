@@ -1,5 +1,8 @@
 #include <GL/glew.h>
+#include <stdlib.h>
 #include <math.h>
+#include <string>
+#include "readOBJ.h"
 
 #ifdef __APPLE__
 #include <GLUT/glut.h> //allows crossplatform with apple
@@ -54,6 +57,8 @@ int main(int argc, char **argv) {
 	
 	// OpenGL init
 	glEnable(GL_DEPTH_TEST);
+
+	read("C:\\Users\\Colin\\Pictures\\Game designs\\Tank.obj");
 
 	//begin event processing cycle
 	glutMainLoop();
