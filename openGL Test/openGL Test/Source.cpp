@@ -3,6 +3,8 @@
 #include <math.h>
 #include <string>
 #include "readOBJ.h"
+#include <iostream>
+#include <vector>
 
 #ifdef __APPLE__
 #include <GLUT/glut.h> //allows crossplatform with apple
@@ -31,6 +33,13 @@ float x=0.0f,z=5.0f;
 //when no key is being presses
 float deltaAngle = 0.0f;
 float deltaMove = 0;
+float cameraHeight = 1.0f;
+
+//Struct Definitions
+struct models{
+	std::vector<float> vertexs;
+	std::vector<std::vector<int>> faces;
+};
 
 int main(int argc, char **argv) {
 
@@ -58,7 +67,9 @@ int main(int argc, char **argv) {
 	// OpenGL init
 	glEnable(GL_DEPTH_TEST);
 
-	read("C:\\Users\\Colin\\Pictures\\Game designs\\Tank.obj");
+	//load tank
+	struct models tank;
+	read("C:\\Users\\Colin\\Pictures\\Game designs\\Tank2.obj", &tank);
 
 	//begin event processing cycle
 	glutMainLoop();
@@ -80,8 +91,8 @@ void renderScene(void) {
 	// Reset transformations
 	glLoadIdentity();
 	// Set the camera
-	gluLookAt(	x, 1.0f, z,
-			x+lx, 1.0f,  z+lz,
+	gluLookAt(	x, cameraHeight, z,
+			x+lx, 1.0f+(0.5f*cameraHeight),  z+lz,
 			0.0f, 1.0f,  0.0f);
 
         // Draw ground
@@ -132,6 +143,22 @@ void changeSize(int width, int height) {
 void normalKeys(unsigned char key, int xx, int yy) {
 	if (key == 27)	//excape is pressed
 		exit(0);
+	switch (key)
+	{
+	case '1':cameraHeight = 2.0f;break;
+	case '2':cameraHeight = 4.0f;break;
+	case '3':cameraHeight = 8.0f;break;
+	case '4':cameraHeight = 10.0f;break;
+	case '5':cameraHeight = 15.0f;break;
+	case '6':cameraHeight = 20.0f;break;
+	case '7':cameraHeight = 40.0f;break;
+	case '8':cameraHeight = 60.0f;break;
+	case '9':cameraHeight = 80.0f;break;
+	case '0':cameraHeight = 100.0f;break;
+	default:
+		break;
+	}
+	std::cout << key <<std::endl;
 }
 
 void drawSnowMan() {
