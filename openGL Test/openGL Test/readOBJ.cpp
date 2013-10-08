@@ -30,7 +30,7 @@ void read(string location, struct models* item) {
 	//	cout << vertexs[i][0] <<", " << vertexs[i][1] << "," << vertexs[i][2] <<endl;
 	//}
 
-	cout << item->vertexs << endl;
+	//cout << item->vertexs << endl;
 
 	File.close();
 
